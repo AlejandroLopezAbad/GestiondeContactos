@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="513.0" prefWidth="364.0" visible="false" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestiondecontactos.VistaPreferencesController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <PieChart maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="220.0" prefWidth="300.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </PieChart>
+            <StackedBarChart maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="220.0" prefWidth="300.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </StackedBarChart>
+         </children>
+      </VBox>
+      <Button alignment="TOP_LEFT" mnemonicParsing="false" text="%btnatras" StackPane.alignment="TOP_LEFT">
+         <graphic>
+            <FontIcon iconLiteral="fas-chevron-left" />
+         </graphic>
+      </Button>
+   </children>
+</StackPane>

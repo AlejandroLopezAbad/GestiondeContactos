@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="513.0" prefWidth="364.0" visible="false" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestiondecontactos.VistaDetalleController">
+   <children>
+      <ImageView fx:id="imagenVistadetalle" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_CENTER">
+         <StackPane.margin>
+            <Insets top="20.0" />
+         </StackPane.margin>
+      </ImageView>
+      <VBox fx:id="vboxDatos" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: red;">
+         <children>
+            <Label fx:id="label_nombre" text="%nombre" />
+            <Label fx:id="labelNombreMod" text="Nombreaqui" />
+            <Label fx:id="label_raza" text="%Raza" />
+            <Label fx:id="labelRazaMod" text="Label" />
+            <Label fx:id="label_genero" text="%Genero" />
+            <Label fx:id="labelGeneroMod" text="Label" />
+            <Label fx:id="label_ki" text="%ki" />
+            <Label fx:id="labelKiMod" text="Label" />
+         </children>
+      </VBox>
+      <Button fx:id="btoatras" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#volverprincipalD" text="%btnatras" StackPane.alignment="TOP_LEFT">
+         <graphic>
+            <FontIcon iconLiteral="fas-chevron-left" />
+         </graphic>
+      </Button>
+   </children>
+</StackPane>

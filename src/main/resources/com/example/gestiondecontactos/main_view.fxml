@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="556.0" prefWidth="364.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestiondecontactos.MainController">
+   <children>
+      <Button fx:id="btnmenu" mnemonicParsing="false" onAction="#menuAbierto" text="%btnmenu" StackPane.alignment="TOP_LEFT">
+         <graphic>
+            <FontIcon fx:id="botonMenu" accessibleRole="BUTTON" iconLiteral="fas-bars" iconSize="15" />
+         </graphic>
+      </Button>
+      <VBox fx:id="vboxMenu" maxWidth="-Infinity" prefHeight="100.0" prefWidth="106.0" style="-fx-background-color: red;" translateX="-106.0" StackPane.alignment="TOP_LEFT">
+         <children>
+            <Label fx:id="Contactos_fx_label" alignment="TOP_LEFT" text="%ContactosFX" />
+            <Separator prefWidth="200.0" />
+            <Button fx:id="botonOpcion1" mnemonicParsing="false" onAction="#onPersonaje1" text="%Opcion1" />
+            <Button fx:id="botonOpcion2" mnemonicParsing="false" onAction="#onPersonaje2" text="%Opcion2" />
+            <Button fx:id="botonOpcion3" mnemonicParsing="false" onAction="#onPersonaje3" text="%Opcion3" />
+            <Separator prefWidth="200.0" />
+            <Button fx:id="botonPreferenicas" mnemonicParsing="false" onAction="#onPreferencesButtonClick" text="%Preferencias">
+               <graphic>
+                  <FontIcon iconLiteral="fas-cog" />
+               </graphic>
+            </Button>
+            <Separator prefWidth="200.0" />
+            <Button fx:id="btnSalir" mnemonicParsing="false" onAction="#exit" text="%Salir">
+               <graphic>
+                  <FontIcon iconLiteral="fas-power-off" />
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <fx:include fx:id="vistaDetalle" source="vista_detalle.fxml" />
+      <fx:include fx:id="vistaGraficas" source="vista_graficas.fxml" />
+      <fx:include fx:id="preferencesViewPane" source="vista_preferences.fxml" />
+      <fx:include fx:id="listViewPersonas" source="lista_view.fxml" />
+   </children>
+</StackPane>
